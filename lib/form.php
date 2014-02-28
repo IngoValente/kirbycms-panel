@@ -255,6 +255,7 @@ class form {
       'italic' => '<a href="#italic" rel="tag" data-tag-open="*" data-tag-close="*" data-tag-sample="' . l::get('form.buttons.italic.sample') . '">' . l::get('form.buttons.italic') . '</a>',
       'link'   => '<a href="#form-overlay-link" rel="overlay">' . l::get('form.buttons.link') . '</a>',
       'email'  => '<a href="#form-overlay-email" rel="overlay">' . l::get('form.buttons.email') . '</a>',
+      'image'  => '<a href="#form-overlay-image" rel="overlay">' . l::get('form.buttons.image') . '</a>'
     );
     
     if(is_array($active)) {

@@ -242,12 +242,13 @@ $(function() {
     
     $this.link = function(modal) {
 
-      var linkField = modal.find('input[name=link]');
+      var isImage = (modal.find('input[name=link]').val() === undefined);
+      var linkField = (isImage) ? modal.find('select[name=src]') : modal.find('input[name=link]');
       var textField = modal.find('input[name=text]');
       
       var tag  = modal.attr('data-tag');
-      var link = $.trim(linkField.val());     
-      var text = $.trim(textField.val());     
+      var link = $.trim(linkField.val());
+      var text = $.trim(textField.val());
 
       linkField.val('');
       textField.val('');
@@ -255,7 +256,7 @@ $(function() {
       if(!link.length) return this.insert('');
       
       if(!text.length || text == link) {
-        return this.insert('<' + link + '>');
+        return (isImage) ? this.insert('(' + tag + ': ' + link + ')') : this.insert('<' + link + '>');
       } else {
         return this.insert('(' + tag + ': ' + link + ' text: ' + text + ')');
       }

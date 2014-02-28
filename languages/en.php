@@ -198,6 +198,7 @@ l::set(array(
   'form.buttons.italic.sample' => 'italic text',
   'form.buttons.link' => 'link',
   'form.buttons.email' => 'email',
+  'form.buttons.image' => 'image',
 
   'form.overlay.link.title' => 'Insert Link',
   'form.overlay.link.link' => 'Link',
@@ -208,5 +209,11 @@ l::set(array(
   'form.overlay.email.link' => 'Email Address',
   'form.overlay.email.text' => 'Link Text (optional)',
   'form.overlay.email.button' => 'Insert Email',
+
+  'form.overlay.image.title' => 'Insert Image',
+  'form.overlay.image.help' => 'Always first upload an image in the Files tab.',
+  'form.overlay.image.name' => 'Select Image',
+  'form.overlay.image.text' => 'Alt (optional)',
+  'form.overlay.image.button' => 'Insert Image',
   
 ));
